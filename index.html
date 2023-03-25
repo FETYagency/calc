@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+  <main class="wrapper">
+
+
+    <section class="inputs">
+
+
+      <div class="bill__input">
+        <label for="bill">Bill</label>
+        <div>
+          <img src="images/icon-dollar.svg" alt="">
+          <input type="text" id="bill" required value="0">
+        </div>
+      </div>
+
+
+
+      <div class="tip">
+        <label>Select Tip %</label>
+        <div>
+          <div class="tip__amount">
+            <input class="radio" type="radio" id="lowest" name="tip">
+            <label for="lowest">5%</label>
+          </div>
+
+          <div class="tip__amount">
+            <input class="radio" type="radio" id="normal" name="tip">
+            <label for="normal">10%</label>
+          </div>
+
+          <div class="tip__amount">
+            <input class="radio" type="radio" id="medium" name="tip">
+            <label for="medium">15%</label>
+          </div>
+
+          <div class="tip__amount">
+            <input class="radio" type="radio" id="high" name="tip">
+            <label for="high">20%</label>
+          </div>
+
+          <div class="tip__amount">
+            <input class="radio" type="radio" id="highest" name="tip">
+            <label for="highest">25%</label>
+          </div>
+
+          <div class="tip__amount">
+            <input class="costume" type="text" value="COSTUME" readonly disabled>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="bill__input">
+        <label for="ppl">Number of People</label>
+        <div>
+          <img src="images/icon-person.svg" alt="">
+          <input type="text" id="ppl" value="0" required>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    
+    <section class="outputs">
+
+      <div class="output">
+        <div class="result">
+            <p class="result__type">Tip Amount <br> <span>/ person</span></p>
+            <p class="result__output">$0.00</p>
+        </div>
+
+        <div class="result">
+          <p class="result__type">Total <br> <span>/ person</span></p>
+          <p class="result__output">$0.00</p>
+        </div>
+      </div>
+
+      <button type="reset">Reset</button>
+      </div>
+
+    </section>
+  </main>
+  
+</body>
+</html>
