@@ -51,6 +51,7 @@ body{
 
     display: flex;
     align-items: center;
+    gap: .6rem;
     justify-content: space-between;
 }
 .bill__input>div>input{
@@ -122,6 +123,8 @@ body{
     justify-content: space-around;
 
     padding-inline: 1.5rem;
+    position: relative;
+    overflow: hidden;
 }
 .output{
     display: flex;
@@ -156,6 +159,33 @@ body{
     background-color: #9FE8DF;
 }
 
+
+
+/* for JS */
+
+.error{
+    background-color: hsl(10, 67%, 45%);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.errorMsg{
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.form__JS{
+    position: absolute;
+    bottom: 120%;
+    color: red;
+    right: 0;
+    font-size: .7rem;
+    display: none;
+}
 
 
 

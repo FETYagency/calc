@@ -17,10 +17,10 @@
 
 
       <div class="bill__input">
-        <label for="bill">Bill</label>
-        <div>
+        <label>Bill</label>
+        <div style="position: relative;">
           <img src="images/icon-dollar.svg" alt="">
-          <input type="text" id="bill" required value="0">
+          <input type="text" id="bill" placeholder="0">
         </div>
       </div>
 
@@ -30,7 +30,7 @@
         <label>Select Tip %</label>
         <div>
           <div class="tip__amount">
-            <input class="radio" type="radio" id="lowest" name="tip">
+            <input class="radio" type="radio" id="lowest" checked name="tip">
             <label for="lowest">5%</label>
           </div>
 
@@ -63,10 +63,13 @@
 
 
       <div class="bill__input">
-        <label for="ppl">Number of People</label>
-        <div>
+        <label>Number of People</label>
+        <div style="position: relative;">
+          <p class="form__JS">
+            can't be zero
+          </p>
           <img src="images/icon-person.svg" alt="">
-          <input type="text" id="ppl" value="0" required>
+          <input type="text" id="ppl" placeholder="0">
         </div>
       </div>
 
@@ -95,5 +98,7 @@
     </section>
   </main>
   
+
+  <script src="script/index.js "></script>
 </body>
 </html>
